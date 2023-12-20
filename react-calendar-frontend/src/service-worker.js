@@ -79,6 +79,7 @@ self.addEventListener('install', async (event) => {
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css',
     '/favicon.ico',
+    '/manifest.json',
   ]);
 });
 
