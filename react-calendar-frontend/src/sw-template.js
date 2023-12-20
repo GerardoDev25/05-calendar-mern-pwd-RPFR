@@ -5,9 +5,19 @@ importScripts(
 );
 
 const { registerRoute } = workbox.routing;
-const { CacheFirst } = workbox.strategies;
+const { CacheFirst, NetworkFirst } = workbox.strategies;
 
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+
+registerRoute(
+  new RegExp('http://localhost:4000/api/auth/renew'),
+  new NetworkFirst()
+);
+
+registerRoute(
+  new RegExp('http://localhost:4000/api/events'),
+  new NetworkFirst()
+);
 
 registerRoute(
   new RegExp(
