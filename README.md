@@ -11,16 +11,16 @@ that include a pwa feature
 
 * 2 you most to have docker, node v16 and workbox install in you machine
 
-* 3 raise the database 
+* 3 run the database 
   * enter in the react-calendar-backend 
   * exec the `docker compose up -d` in a terminal
   
-* 4 raise the backend 
+* 4 run the backend 
   * enter in the react-calendar-backend 
   * exec the `yarn install` to install the dependencies
   * exec the `yarn dev` to run the backend
 
-* 5 raise the frontend
+* 5 run the frontend
   * enter in the react-calendar-frontend 
   * exec the `yarn install` to install the dependencies
   * exec the `yarn dev` to run the frontend app
